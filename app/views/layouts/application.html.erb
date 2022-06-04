@@ -9,9 +9,15 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <%= render 'layouts/header' %>
+    <header>
+      <%= render 'layouts/header' %>
+      <div class="container">
+        <div class="row justify-content-center">
+          <%= render 'searches/search' %>
+        </div>
+      </div>
+    </header>
     <main>
-      <%= render 'searches/search' %>
       <p id="notice">
         <%= notice %>
       </p>
